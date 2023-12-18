@@ -86,6 +86,7 @@ router.post('/submit-bog-info', function(req, res, next){
   });
 });
 
+// GET bibleverse page
 router.get('/bibleverse', (req, res) => {
   let bibelvers = "Bible Verse"; 
   axios.get('https://bible-api.com/john 3:16')
