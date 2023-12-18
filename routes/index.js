@@ -91,6 +91,7 @@ router.get('/bibleverse', (req, res) => {
   let bibelvers = "Bible Verse"; 
   axios.get('https://bible-api.com/john 3:16')
     .then(response => {
+      console.log(response.data); // Log the JSON data to the console
       res.render('bibleverse', { title: bibelvers , verse: response.data });
     })
     .catch(error => {
