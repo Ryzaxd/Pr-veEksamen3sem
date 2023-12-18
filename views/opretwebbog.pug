@@ -1,0 +1,36 @@
+extends layout
+
+block content
+
+    h1 Her kan du tilføje din egen bog til vores sortiment 
+
+    form.bog-form(action="/submit-bog-info", method="post")
+    
+        .section
+            div.container
+                h2 Udfyld denne formular for at oprette din bog
+
+                div.input-group
+                    label(for="titel") Titel:
+                    input#titel(type="text", name="titel", required)
+
+                div.input-group
+                    label(for="forfatter") Forfatter:
+                    input#forfatter(type="text", name="forfatter", required)
+
+                div.input-group
+                    label(for="forlag") Forlag:
+                    input#forlag(type="text", name="forlag", required)
+
+                div.input-group
+                    label(for="udgave") Udgave:
+                    input#udgave(type="number", name="udgave", required)
+
+                div.input-group
+                    label(for="pris") Pris:
+                    input#pris(type="number", name="pris", required)
+
+        div.button-group
+            button.submit-button(type="submit") Indsend din bog
+
+            a.button(href="/") Tilbage

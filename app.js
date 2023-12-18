@@ -20,6 +20,13 @@ app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', indexRouter);
+app.use('/webapplikationer', indexRouter);
+app.use('/computersprog', indexRouter);
+app.use('/computersprog1', indexRouter);
+app.use('/computersprog2', indexRouter);
+app.use('opretwebbog', indexRouter);
+app.use('/submit-bog-info', indexRouter);
+app.use('bibleverse', indexRouter);
 
 
 // catch 404 and forward to error handler

@@ -1,0 +1,44 @@
+extends layout
+
+block content
+    h1 Her kan du se vores udvalg af bøger om #{title}
+    table
+        thead
+            tr
+                th Titel
+                th Forfatter
+                th Forlag
+                th Udgave
+                th Pris
+
+        tbody
+            tr
+                td= "Introduction to Java"
+                td= "Liang, Daniel Y"
+                td= "Pearson"
+                td= "11"
+                td= "250"
+        
+            tr
+                td= "Python Crash Course"
+                td= "Eric Matthes"
+                td= "No starch"
+                td= "2"
+                td= "300"
+
+            tr
+                td= "C++ Primer"
+                td= "Stanley B. Lippman"
+                td= "Pearson"
+                td= "5"
+                td= "400"
+
+            tr
+                td= "Java in a Nutshell"
+                td= "Benjamin J. Evans"
+                td= "O'Reilly"
+                td= "7"
+                td= "350"
+
+    div.button-group
+        a.button(href="/") Tilbage

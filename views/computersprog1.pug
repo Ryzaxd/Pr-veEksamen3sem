@@ -1,0 +1,24 @@
+extends layout
+
+block content
+    h1 Her kan du se vores udvalg af bøger om #{title}
+    table
+        thead
+            tr
+                th Titel
+                th Forfatter
+                th Forlag
+                th Udgave
+                th Pris
+
+        tbody
+            each book in books
+                tr 
+                    td= book.titel
+                    td= book.forfatter
+                    td= book.forlag
+                    td= book.udgave
+                    td= book.pris
+
+    div.button-group
+        a.button(href="/") Tilbage

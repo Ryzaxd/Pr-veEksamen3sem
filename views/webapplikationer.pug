@@ -1,0 +1,44 @@
+extends layout
+
+block content
+    h1 Her kan du se vores udvalg af bøger om #{title}
+    table
+        thead
+            tr
+                th Titel
+                th Forfatter
+                th Forlag
+                th Udgave
+                th Pris
+
+        tbody
+            tr
+                td= "Introduction to Javascript"
+                td= "Kenneth Geisshirt"
+                td= "Libris"
+                td= "1"
+                td= "50"
+        
+            tr
+                td= "Practical Node.js"
+                td= "Azat Mardan"
+                td= "APress"
+                td= "2"
+                td= "350"
+            
+            tr
+                td= "Node.js in Action"
+                td= "Mike Cantelon"
+                td= "Manning"
+                td= "2"
+                td= "300"
+
+            tr
+                td= "Node.js Design Patterns"
+                td= "Mario Casciaro"
+                td= "Packt"
+                td= "1"
+                td= "250"
+
+    div.button-group
+        a.button(href="/") Tilbage
